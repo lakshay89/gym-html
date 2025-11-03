@@ -48,7 +48,172 @@
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Required Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Optional: Google Fonts for 'Zen Dots' and 'Hind' -->
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Zen+Dots&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="path/to/flaticon.css" />
+
 </head>
+<style>
+
+    .testimonial-section {
+  background: linear-gradient(90deg, #f8f9fa 0%, #ffffff 100%);
+}
+.carousel-item p {
+  min-height: 100px;
+}
+.class123 {
+    background-image: url(images/client-pettern.svg);
+       background-attachment: fixed !important; 
+       background-position: center !important;
+       background-size: cover !important;
+         background-repeat: no-repeat !important;
+         /* height: 1000px; */
+}
+
+    /* Main Gradient Background */
+.standout-bg {
+    background: linear-gradient(90deg, #d1f0cd 0%, #b2eed4 25%, #93dffa 55%, #f2e2c7 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Orange echo lines (can use SVG for custom curves if needed) */
+.standout-bg::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background-image: url("images/standout-curve.svg"); /* Customize this for your brand line effect */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.11;
+    z-index: 1;
+}
+
+/* HEADLINE TEXT */
+.standout-headline {
+    font-family: 'Zen Dots', 'Arial', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #27282c;
+    letter-spacing: 1.5px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: right;
+    z-index: 10;
+    position: relative;
+}
+
+.standout-feature {
+    margin-top: 6vw;
+    margin-left: 2vw;
+    z-index: 10;
+    position: relative;
+}
+
+.standout-label {
+    font-family: 'Zen Dots', 'Arial', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #27282c;
+    text-transform: uppercase;
+}
+
+.standout-desc {
+    font-size: 1.2vw;
+    font-family: 'Hind', sans-serif;
+    color: #27282c;
+    margin-bottom: 2vw;
+    max-width: 34vw;
+}
+
+/* Orange Gradient Primary Button */
+.gradient-btn {
+    background: linear-gradient(90deg, #ff5f15 0%, #ffa256 100%);
+    color: #fff !important;
+    font-family: 'Zen Dots', 'Arial', sans-serif;
+    font-size: 1.15vw;
+    border: none;
+    outline: none;
+    padding: 0.9vw 2.8vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 24px 0 rgba(255, 95, 21, 0.13);
+    text-transform: uppercase;
+    margin-bottom: 0.5vw;
+    transition: filter 0.15s, background 0.15s;
+}
+.gradient-btn:hover {
+    filter: brightness(1.10);
+    background: linear-gradient(90deg, #ff5f15 0%, #ff742e 100%);
+}
+
+/* Tutorial Button */
+.tutorial-btn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 3.5px solid #ff5f15;
+    border-radius: 1.2vw;
+    padding: 0.85vw 2.2vw;
+    font-family: 'Zen Dots', 'Arial', sans-serif;
+    font-size: 1.12vw;
+    color: #ff5f15;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 22px 0 #fee0d5;
+    margin-left: 3vw;
+    margin-bottom: 2vw;
+    transition: background 0.16s, color 0.16s;
+}
+.tutorial-btn:hover { background: #ff5f15; color: #fff; }
+.tutorial-btn .btn-play-icon {
+    margin-left: 1vw;
+    font-size: 1.3vw;
+    color: #ff5f15;
+    background: #fff0e5;
+    border-radius: 50%;
+    padding: 0.35vw 0.53vw;
+    margin-right: -0.25vw;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.13s;
+}
+.tutorial-btn:hover .btn-play-icon { background: #fff; color: #ff5f15; }
+
+/* Fitness Image */
+.standout-fitness-img {
+    max-width: 57vw;
+    margin-left: -2vw;
+    margin-top: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 36px 0 rgba(44, 44, 44, 0.06);
+    z-index: 10;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .standout-bg { min-height: 60vh; }
+    .standout-headline, .standout-label { font-size: 6vw; }
+    .standout-desc, .gradient-btn, .tutorial-btn { font-size: 2vw; padding: 1vw 3vw;}
+    .standout-feature { margin-top: 3vw; }
+    .standout-fitness-img { max-width: 90vw; margin-left: 0; }
+}
+
+@media (max-width: 576px) {
+    .standout-headline, .standout-label { font-size: 8vw; }
+    .standout-desc, .gradient-btn, .tutorial-btn { font-size: 3vw; padding: 2vw 4vw;}
+    .standout-feature { margin-top: 2vw; margin-left: 0; }
+    .standout-fitness-img { max-width: 98vw; }
+}
+</style>
 
 <body>
 
@@ -777,7 +942,7 @@
             </div>
             <!-- SLIDER END --> 
              
-             <div class="wt-bnr-inr overlay-wraper bg-center" style="background-image:url(images/banner/front-view-woman-doing-sport-with-stats.jpg);">
+             <!-- <div class="wt-bnr-inr overlay-wraper bg-center" style="background-image:url(images/banner/front-view-woman-doing-sport-with-stats.jpg);">
             	<div class="overlay-main site-bg-black opacity-06"></div>
                 <div class="container">
                     <div class="wt-bnr-inr-entry">
@@ -788,17 +953,40 @@
                             </div>
                         </div>
                         
-                            <!-- <div>
-                                <ul class="wt-breadcrumb breadcrumb-style-2">
-                                    <li><a href="javascript:void(0);">Home</a></li>
-                                    <li>Contact us</li>
-                                </ul>
-                            </div>
-                        
-                        <!-- BREADCRUMB ROW END -->                        
+                                                 
                     </div>
                 </div>
-            </div>
+            </div> -->
+         
+
+
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1733069713_52014b8223e19f9aeb96.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/1732780847_7ebe3752d87fe110c338.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/1733032550_985a9e7f82d12b1d541d.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/1733036399_9883503b9d2c38ad528c.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
 
             <!-- ABOUT ONE SECTION START -->
             <div class="section-full p-t120 p-b90 bg-no-repeat bg-no-repeat bg-bottom-center bg-gray-light">
@@ -836,16 +1024,16 @@
                                     <!-- TITLE END-->
 
                                      <div class="about-one">
-                                        <div class="wt-icon-box-wraper left bg-black m-b20">
+                                        <div class="wt-icon-box-wraper left m-b20">
                                             
                                             <div class="icon-content">
                                                 <h5 class="wt-tilte">Why Us</h5>
                                                 <ol>
                                                     <li>* Customized training plans to fulfil your personal fitness goals</li>
                                                     <li>* consistency and commitment</li>
-                                                    <li>* ⁠Wide variety of workout program makes each session different so you can enjoy workout</li>
+                                                    <li>* Wide variety of workout program makes each session different so you can enjoy workout</li>
                                                     <li>* Tracking your fitness goals</li>
-                                                    <li>* ⁠24/7 support</li>
+                                                    <li>* 24/7 support</li>
                                                 </ol>
                                             </div>
                                         </div>
@@ -896,14 +1084,7 @@
                                         <div class="team-detail">                                      
                                             <h3 class="m-t0 team-name">Weight Management Program</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                      
                                     </div>
                             
                                 </div>
@@ -920,14 +1101,7 @@
                                         <div class="team-detail">                                     
                                             <h3 class="m-t0 team-name">Functional Training</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                           
                                     </div>
                             
                                 </div>
@@ -944,14 +1118,7 @@
                                         <div class="team-detail">                                     
                                             <h3 class="m-t0 team-name">Yoga</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                          
                                     </div>
                             
                                 </div>
@@ -967,14 +1134,7 @@
                                         <div class="team-detail">                                       
                                             <h3 class="m-t0 team-name">Kids Training Program</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                          
                                     </div>
                             
                                 </div>
@@ -990,14 +1150,7 @@
                                         <div class="team-detail">                                       
                                             <h3 class="m-t0 team-name">Athletic Training Program</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                         
                                     </div>
                             
                                 </div>
@@ -1013,14 +1166,7 @@
                                         <div class="team-detail">                                       
                                             <h3 class="m-t0 team-name">Online Fitness Training Program</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                         
                                     </div>
                             
                                 </div>
@@ -1033,88 +1179,37 @@
             </div>   
             <!-- OUR TEAM SECTION END --> 
           
-
+<section class="standout-bg d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left column: Text and Get Started button -->
+            <div class="col-lg-5 col-md-12 standout-feature">
+                <div class="standout-label mb-3">DEFY THE LIMITS</div>
+                <div class="standout-desc mb-3">
+                    We are the ultimate destination for those seeking to push their boundaries, elevate their endurance, and achieve greatness.
+                </div>
+                <a href="#" class="gradient-btn">GET STARTED</a>
+            </div>
+            <!-- Right: Headline, Image, Tutorial Button -->
+            <div class="col-lg-12 col-md-12 d-flex flex-column align-items-end">
+                <div class="standout-headline me-lg-3 mb-4">HIGH ENDURANCE</div>
+                <div class="d-flex align-items-end flex-row">
+                    <!-- Use your own fitness image. The one below is just for visualization -->
+                    <img src="images/1732683034_6828f67776fc3ee697bb.webp" alt="High Endurance" class="standout-fitness-img img-fluid"/>
+                    <a href="https://www.youtube.com/@way2fitbymanish" class="tutorial-btn ms-lg-4 ms-3">
+                        WATCH TUTORIAL
+                        <span class="btn-play-icon">&#9654;</span> <!-- Unicode Play Icon, swap with SVG if needed -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 			<!-- SOME FACTS START -->
-            <div class="section-full p-t120 p-b120 site-bg-gray-light">
-                <div class="container">
-                        <div class="section-content"> 
-                            <div class="row justify-content-center d-flex align-items-center">
-                 
-                                <div class="col-lg-6 col-md-12 m-b30">
-                                    <!-- TITLE START-->
-                                    <div class="section-head left wt-small-separator-outer">
-                                        <div class="wt-small-separator site-text-primary">
-                                            <div class="sep-leaf-left"></div>
-                                            <div>Some Facts</div>
-                                        </div>
-                                        <h2>We always provide best fitness service for <span class="site-text-primary">25 years</span></h2>
-                                    </div>
-                                    <!-- TITLE END-->                            
-                                </div>
-             
-                                <div class="col-lg-6 col-md-12 m-b30">
-                                    <div class="c-section-one">
-                                        <div class="row justify-content-center d-flex">
-                                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                                                <div class="wt-icon-box-wraper left">
-                                                    <span class="icon-md p-t10">
-                                                        <i class="flaticon-muscle"></i>
-                                                    </span>
-                                                    <div class="icon-content">
-                                                        <div class="m-b5 site-text-primary"><span class="counter">150</span></div>
-                                                        <div class="icon-content-info">Expert Trainer</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+            
+            
 
-                                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                                                <div class="wt-icon-box-wraper left">
-                                                    <span class="icon-md p-t10">
-                                                        <i class="flaticon-gym"></i>
-                                                    </span>
-                                                    <div class="icon-content">
-                                                        <div class="m-b5 site-text-primary"><span class="counter">75</span></div>
-                                                        <div class="icon-content-info">Total Branch</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                                                <div class="wt-icon-box-wraper left">
-                                                    <span class="icon-md p-t10">
-                                                        <i class="flaticon-figure"></i>
-                                                    </span>
-                                                    <div class="icon-content">
-                                                        <div class="m-b5 site-text-primary"><span class="counter">250</span></div>
-                                                        <div class="icon-content-info">Happy Clients</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                                                <div class="wt-icon-box-wraper left ">
-                                                    <span class="icon-md p-t10">
-                                                        <i class="flaticon-sport"></i>
-                                                    </span>
-                                                    <div class="icon-content">
-                                                        <div class="m-b5 site-text-primary"><span class="counter">18</span></div>
-                                                        <div class="icon-content-info">Experience</div>
-                                                    </div>
-                                                </div>
-                                            </div>                                            
-
-                                        </div>
-
-                                    </div>
-
-                                </div>  
-                                                                                                                                                                                       
-                            </div>
-
-                        </div>
-                </div>
-            </div>   
             <!-- SOME FACTS END -->  
             
             <!-- OUR TEAM START -->
@@ -1146,14 +1241,7 @@
                                             <span class="team-position">Bodybuilding Coach</span>                                        
                                             <h3 class="m-t0 team-name">William Dixon</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                    
                                     </div>
                             
                                 </div>
@@ -1171,14 +1259,7 @@
                                             <span class="team-position">Body Builder Trainer</span>                                        
                                             <h3 class="m-t0 team-name">Dominic Snyder</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                     
                                     </div>
                             
                                 </div>
@@ -1196,14 +1277,7 @@
                                             <span class="team-position">Bodybuilding Coach</span>                                        
                                             <h3 class="m-t0 team-name">Virgil Cook</h3>
                                         </div>
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                                            </ul>
-                                        </div>                                        
+                                                                         
                                     </div>
                             
                                 </div>
@@ -1215,6 +1289,11 @@
                 </div>
             </div>   
             <!-- OUR TEAM SECTION END --> 
+
+            
+
+
+
    
 		   <!-- PROJECT SECTION START -->
             <div class="section-full  p-t120 p-b90 site-bg-black">
@@ -1401,248 +1480,7 @@
             <!-- Video SECTION END --> 
 
             <!-- Time Table Section START -->
-            <div class="section-full  p-t120 p-b120">
-            
-                <div class="container">
-                    <!-- TITLE START-->
-                    <div class="section-head center wt-small-separator-outer">
-                        <div class="wt-small-separator site-text-primary">
-                            <div  class="sep-leaf-left"></div>
-                            <div>Our timetable</div>
-                        </div>
-                        <h2>Working Hours & Classes</h2>
-                    </div>
-                    <!-- TITLE END--> 
-                    <div class="section-content">
-                       <div class="time-zone-table1 table-responsive">
-                        <table class="table">
-							<thead>
-							<tr>
-								<th><div class="classes-days">Routine</div></th>
-								<th><div class="classes-days">Monday</div></th>
-								<th><div class="classes-days">Tuesday</div></th>
-								<th><div class="classes-days">Wednesday</div></th>
-								<th><div class="classes-days">Thursday</div></th>
-                                <th><div class="classes-days">Friday</div></th>
-                                <th><div class="classes-days">Saturday</div></th>
-                                <th><div class="classes-days">Sunday</div></th>
-							</tr>
-							</thead>
-							<tbody>
-                            <!--row one-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>06</strong> <span>am</span></div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cardio</span>
-                                        <p>06 am - 07 am</p>
-                                    </div>
-								</td>
-								<td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Yoga</span>
-                                        <p>06 am - 07 am</p>
-                                    </div>
-								</td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cardio</span>
-                                        <p>06 am - 07 am</p>
-                                    </div>
-								</td>
-                                <td><div class="content-empty"></div></td>
-                                <td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Yoga</span>
-                                        <p>06 am - 07 am</p>
-                                    </div>
-								</td>                                                                
-                            </tr>
-
-                            <!--row two-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>07</strong> <span>am</span></div>
-                                </td>
-
-                                <td><div class="content-empty"></div></td>
-                                <td>
-                                    <div class="content-data">
-                                        <span>Cycling</span>
-                                        <p>07 am - 08 am</p>
-                                    </div>
-                                </td>                                    
-								<td>
-                                    <div class="content-data">
-                                        <span>Boxing</span>
-                                        <p>07  am - 08 am</p>
-                                    </div>
-								</td>
-                                <td><div class="content-empty"></div></td>
-                                <td>
-                                    <div class="content-data">
-                                        <span>Power lifting</span>
-                                        <p>07  am - 08 am</p>
-                                    </div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cycling</span>
-                                        <p>07 am - 08 am</p>
-                                    </div>
-                                </td>
-                                <td><div class="content-empty"></div></td>                                                                
-                            </tr> 
-
-                            <!--row thee-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>08</strong> <span>am</span></div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Power Lifting</span>
-                                        <p>08 am - 09 am</p>
-                                    </div>
-								</td>
-								<td><div class="content-empty"></div></td>
-                                <td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cycling</span>
-                                        <p>08 am - 09 am</p>
-                                    </div>
-								</td>
-                                <td><div class="content-empty"></div></td>
-                                <td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Power Lifting</span>
-                                        <p>08 am - 09 am</p>
-                                    </div>
-								</td>                                                                
-                            </tr> 
-
-                            <!--row four-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>05</strong> <span>pm</span></div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Dumbbelling</span>
-                                        <p>05 pm - 06 pm</p>
-                                    </div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Yoga</span>
-                                        <p>05 pm - 06 pm</p>
-                                    </div>
-                                </td> 
-								<td>
-                                    <div class="content-data">
-                                        <span>Cycling</span>
-                                        <p>05 pm - 06 pm</p>
-                                    </div>
-								</td>                                                               
-								<td><div class="content-empty"></div></td>
-
-
-                                <td>
-                                    <div class="content-data">
-                                        <span>Jumping</span>
-                                        <p>05 pm - 06 pm</p>
-                                    </div>
-                                </td>  
-                                <td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cardio</span>
-                                        <p>05 pm - 06 pm</p>
-                                    </div>
-								</td>                                                                
-                            </tr>  
-
-                            <!--row five-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>06</strong> <span>pm</span></div>
-                                </td>
-
-                                <td><div class="content-empty"></div></td>
-                                <td><div class="content-empty"></div></td>
-                                <td><div class="content-empty"></div></td>                                    
-                                <td>
-                                    <div class="content-data">
-                                        <span>Power Lifting</span>
-                                        <p>06 pm - 07 pm</p>
-                                    </div>
-                                </td>                                    
-								<td><div class="content-empty"></div></td> 
-								<td>
-                                    <div class="content-data">
-                                        <span>Dumbbelling</span>
-                                        <p>06 pm - 07 pm</p>
-                                    </div>
-								</td>
-
-								<td><div class="content-empty"></div></td>                                                                
-                            </tr>  
-
-                            <!--row Six-->
-							<tr>
-								<td>
-                                    <div class="classes-time"><strong>07</strong> <span>pm</span></div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Cardio</span>
-                                        <p>07 pm - 08 pm</p>
-                                    </div>
-                                </td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Power Lifting</span>
-                                        <p>07 pm - 08 pm</p>
-                                    </div>
-                                </td> 
-								<td>
-                                    <div class="content-data">
-                                        <span>Dumbbelling</span>
-                                        <p>07 pm - 08 pm</p>
-                                    </div>
-								</td>                                                               
-								<td><div class="content-empty"></div></td>
-
-
-                                <td>
-                                    <div class="content-data">
-                                        <span>Jumping</span>
-                                        <p>07 pm - 08 pm</p>
-                                    </div>
-                                </td>  
-                                <td><div class="content-empty"></div></td>
-								<td>
-                                    <div class="content-data">
-                                        <span>Weight loss</span>
-                                        <p>07 pm - 08 pm</p>
-                                    </div>
-								</td>                                                                
-                            </tr>  
-   
-                            
-							</tbody>
-						</table>                           
-                       </div>     
-                    </div>
-                </div>
-                
-            </div>   
+      
             <!-- Time Table Section END -->   
 
             <!-- TESTIMONIAL SECTION START -->
@@ -1764,9 +1602,9 @@
                                 <div class="section-head left wt-small-separator-outer">
                                     <div class="wt-small-separator white">
                                         <div  class="sep-leaf-left white"></div>
-                                        <div>Latest Blog</div>
+                                        <div>Review</div>
                                     </div>
-                                    <h2 class="wt-title">Our Recent News</h2>
+                                    <h2 class="wt-title">Our Precious Members </h2>
                                 </div>
                                 <!-- TITLE END-->
                             </div>
@@ -1786,11 +1624,11 @@
                                 <div class="wt-post-info">
 
                                     <div class="wt-post-author">
-                                        <div class="post-author-pic"><img src="images/blog/author/1.jpg" alt=""></div>
-                                        <div class="post-author-name">By Sarah Atkins </div>
+                                        <div class="post-author-pic"><img src="images/1732787031_404da761203f80a44648.jpeg" alt=""></div>
+                                        <div class="post-author-name">By Simran Kaur </div>
                                     </div>                                 
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="blog-single.html">How to Keep Your Body Healthy in Over the festival</a></h3>
+                                        <h3 class="post-title"><a href="blog-single.html">Amazing experience! Highly recommended!</a></h3>
                                     </div>
                                 </div> 
                                 <div class="wt-post-readmore ">
@@ -1813,11 +1651,11 @@
                                 <div class="wt-post-info">
 
                                     <div class="wt-post-author">
-                                        <div class="post-author-pic"><img src="images/blog/author/2.jpg" alt=""></div>
-                                        <div class="post-author-name">By Donald Jackson </div>
+                                        <div class="post-author-pic"><img src="images/1732787007_653a1e72825010a15528.jpeg" alt=""></div>
+                                        <div class="post-author-name">By Lavanya Singh </div>
                                     </div>                                 
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="blog-single.html">Give your fitness a boost with our gym challenge</a></h3>
+                                        <h3 class="post-title"><a href="blog-single.html">“Lost 15kgs sustainably with a professional team!”</a></h3>
                                     </div>
                                 </div> 
                                 <div class="wt-post-readmore ">
@@ -1840,11 +1678,11 @@
                                 <div class="wt-post-info">
 
                                     <div class="wt-post-author">
-                                        <div class="post-author-pic"><img src="images/blog/author/3.html" alt=""></div>
-                                        <div class="post-author-name">By Thomas Garman </div>
+                                        <div class="post-author-pic"><img src="images/1733159220_affc7fa9266ae0e435d6.jpeg" alt=""></div>
+                                        <div class="post-author-name">By Bikram Mehta</div>
                                     </div>                                 
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="blog-single.html">Fitness is not About Being Better than Someone Else</a></h3>
+                                        <h3 class="post-title"><a href="blog-single.html">Way2Fit completely transformed my fitness routine!</a></h3>
                                     </div>
                                 </div> 
                                 <div class="wt-post-readmore ">
@@ -1860,164 +1698,17 @@
             <!-- OUR BLOG END -->
 
             <!-- CLIENT LOGO SECTION START -->
-            <div class="section-full site-bg-gray-light p-tb120">
-                <div class="container home-client-outer">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="client-bg-img">
-                                <div class="wt-media">
-                                    <img src="images/client-logo-bg.html" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                        <!-- TITLE START-->
-                        <div class="section-head left wt-small-separator-outer">
-                            <div class="wt-small-separator site-text-primary">
-                                <div  class="sep-leaf-left"></div>
-                                <div>Fitness Sales Associates</div>                                
-                            </div>
-                            <h2>A few of our clients</h2>
-                        </div>
-                        <!-- TITLE END-->
-                        </div>
-                    </div>
-                    <div class="section-content">
-
-                        <div class="owl-carousel home-client-carousel owl-btn-vertical-center shadow">
-                        
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w1.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w2.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w3.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w4.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w5.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w6.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w1.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w2.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w3.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w4.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w5.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w6.html" alt=""></a></div>
-                                </div>
-                            </div>  
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w1.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w2.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w3.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w4.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w5.html" alt=""></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="ow-client-logo">
-                                    <div class="client-logo client-logo-media">
-                                    <a href="javascript:void(0);"><img src="images/client-logo/w6.html" alt=""></a></div>
-                                </div>
-                            </div>                                                                      
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+       
             <!-- CLIENT LOGO  SECTION End -->
+
+
+
+
+
+
+            <!-- 1111111111 -->
+
+   
 
 
        
@@ -2205,7 +1896,7 @@
 </div>
 <!-- STYLE SWITCHER END ==== -->
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

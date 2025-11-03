@@ -145,6 +145,7 @@ This files [Table of contents] are outlined below
 .site-text-primary {
   color: #ff6a01;
 }
+a{text-decoration: none !important;}
 
 .site-text-black {
   color: #000;
@@ -9338,3 +9339,188 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.standout-bg{
+.stand-with-section {
+    position: relative;
+    padding: 80px 0;
+    background-color: #fff;
+    overflow: hidden;
+    background-image: url('images/backgroundstrips.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.stand-with-section::after {
+    content: "";
+    width: 580px;
+    height: 340px;
+    background: #234ee7;
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    filter: blur(150px);
+    z-index: -1;
+}
+
+.stand-with-section::before {
+    content: "";
+    width: 560px;
+    height: 230px;
+    background: #16cc3e;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    filter: blur(150px);
+    z-index: -1;
+}
+
+.stand-with-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.top-block {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.top-block h1.title {
+    font-family: "Zen Dots", cursive;
+    font-weight: 400;
+    font-size: 42px;
+    color: #2d2d2d;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+.top-block .d-lg-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.top-block img {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text-block {
+    color: #2d2d2d;
+    font-family: "Hind", sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.text-block span {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn_wrapper {
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn_wrapper:hover {
+    background: #333;
+}
+
+.img-block {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url('images/backgroundstand-with-pettern.svg');
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-size: contain;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.White-btn {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.White-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.ms-lg-auto {
+    margin-left: auto;
+}
+
+.mt-lg-0 {
+    margin-top: 0;
+}
+
+
+/* Animation classes used by WOW.js */
+.wow {
+    visibility: hidden;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInUpBig {
+    animation-name: fadeInUpBig;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+}
